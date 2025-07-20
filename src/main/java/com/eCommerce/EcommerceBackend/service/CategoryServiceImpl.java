@@ -94,6 +94,5 @@ public class CategoryServiceImpl implements CategoryService {
         savedCategory = categoryRepository.save(category);
         return modelMapper.map(savedCategory, CategoryDTO.class);
 
-
     }
 }
