@@ -20,7 +20,7 @@ public class CategoryController {
 
     private CategoryService categoryService;
 
-    @PreAuthorize("hasRole('ADMIN')")
+    //@PreAuthorize("hasRole('ADMIN')")
 
     @GetMapping("/echo")
     public ResponseEntity<String> echoMessage(@RequestParam(name = "message", required = false) String message){
